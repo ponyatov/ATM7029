@@ -6,4 +6,4 @@ docs/index.html: $(DOC) Makefile
 	
 TODAY = $(shell date +%y%m%d)
 release:
-	git tag $(TODAY) && git push -v --tags
+	git push -v && git tag $(TODAY) && git push --tags
