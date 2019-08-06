@@ -7,5 +7,8 @@ Installation process was automated:
 $ cd ~
 $ unzip ~/Downloads/ATM7029-190806.zip
 $ cd ATM7029-190806
-$ make
+$ make install
 ```
+
+You need to install some tools noted later into the VM with Windows XP running.
+

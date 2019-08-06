@@ -8,3 +8,8 @@ I visit [Actions Semiconductor](http://www.actions-semi.com/) website. There is 
 Luckily Google let me find some tools and posts to uncover this thing and 
 build a custom embedded Linux system.
 
+See also:
+
+* <https://github.com/bmourit>
+	* <https://github.com/bmourit/owl2x-linux__old__/wiki>
+	* <https://github.com/bmourit/u-boot_owlxx>

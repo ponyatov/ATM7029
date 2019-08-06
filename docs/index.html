@@ -15,11 +15,26 @@
 <li><a href="#for-bdf-netbook-and-tablets">for BDF netbook and tablets</a></li>
 </ul></li>
 <li><a href="#about">About</a></li>
+<li><a href="#supported-devices">Supported devices</a><ul>
+<li><a href="#bdf-netbook">BDF netbook</a></li>
+<li><a href="#ainol-novo-10-hero-ii">Ainol Novo 10 Hero II</a></li>
+</ul></li>
 <li><a href="#install">Install</a><ul>
 <li><a href="#tools">Tools</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#atm7029-1">ATM7029</a></li>
+<li><a href="#atm7029-1">ATM7029</a><ul>
+<li><a href="#actions-act-atm7029">Actions ACT-ATM7029</a><ul>
+<li><a href="#references">references</a></li>
+</ul></li>
+<li><a href="#gs702a">GS702A</a><ul>
+<li><a href="#actions-atm7029-development-board">Actions ATM7029 development board</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#vivante-gpu">Vivante GPU</a><ul>
+<li><a href="#vivante-gc1000">Vivante GC1000</a></li>
+</ul></li>
+<li><a href="#android-extracts">Android extracts</a></li>
 </ul>
 </div>
 <h1 id="atm7029">ATM7029</h1>
@@ -32,17 +47,155 @@
 <p>I suddenly bought the cheapest chinese BDF netbook. It's a real crab both in hardware and especially in software. Some genius installed Android 5, so the device is totally unusable in any way.</p>
 <p>As you know, support is also chinese. I uselessly spend two months kicking the ass of seller, asking about a contact of any technical specialist to consult about SDK and tools let me build my own system for this scrap.</p>
 <p>I visit <a href="http://www.actions-semi.com/">Actions Semiconductor</a> website. There is nothing about <a href="#atm7029-1">ATM7029</a> SoC! Luckily Google let me find some tools and posts to uncover this thing and build a custom embedded Linux system.</p>
+<p>See also:</p>
+<ul>
+<li><a href="https://github.com/bmourit" class="uri">https://github.com/bmourit</a>
+<ul>
+<li><a href="https://github.com/bmourit/owl2x-linux__old__/wiki" class="uri">https://github.com/bmourit/owl2x-linux__old__/wiki</a></li>
+<li><a href="https://github.com/bmourit/u-boot_owlxx" class="uri">https://github.com/bmourit/u-boot_owlxx</a></li>
+</ul></li>
+</ul>
+<h2 id="supported-devices">Supported devices</h2>
+<h3 id="bdf-netbook">BDF netbook</h3>
+<ul>
+<li><a href="https://www.aliexpress.com/af/bdf-netbook.html?SearchText=bdf+netbook" class="uri">https://www.aliexpress.com/af/bdf-netbook.html?SearchText=bdf+netbook</a></li>
+</ul>
+<h3 id="ainol-novo-10-hero-ii">Ainol Novo 10 Hero II</h3>
+<ul>
+<li><a href="https://dflund.se/~triad/krad/linuxinstall.html" class="uri">https://dflund.se/~triad/krad/linuxinstall.html</a></li>
+<li><a href="https://github.com/bnmguy/ATC-ATM7029" class="uri">https://github.com/bnmguy/ATC-ATM7029</a></li>
+<li>ru <a href="https://4pda.ru/forum/index.php?showtopic=396396" class="uri">https://4pda.ru/forum/index.php?showtopic=396396</a></li>
+</ul>
 <h2 id="install">Install</h2>
 <p>To build and install the system you should download source code archives from <a href="https://github.com/ponyatov/ATM7029/releases/latest" class="uri">https://github.com/ponyatov/ATM7029/releases/latest</a> and install some tools separately.</p>
 <p>Installation process was automated:</p>
 <pre><code>$ cd ~
 $ unzip ~/Downloads/ATM7029-190806.zip
 $ cd ATM7029-190806
-$ make</code></pre>
+$ make install</code></pre>
+<p>You need to install some tools noted later into the VM with Windows XP running.</p>
 <h3 id="tools">Tools</h3>
 <ul>
-<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/Pad_Product_Tool_1.04_01.rar">Actions PAD product tool</a></li>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/Pad_Product_Tool_1.04_01.rar">Actions PAD product tool</a> old version 1.04.01</li>
+<li>ACTIONS Pad Tools Pack:
+<ul>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/ACTIONS.Pad.Firmware.Modify.Tool_V1.08.rar">ACTIONS Pad Firmware Modify Tool_V1.08</a></li>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/ACTIONS.Pad.Image.Maker.Tool_V1.02.rar">ACTIONS Pad Image Maker Tool_V1.02</a></li>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/ACTIONS.Pad.Product.Tool_V1.07.02.rar">ACTIONS Pad Product Tool_V1.07.02</a></li>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/ACTIONS.Pad.Product.Tool_V1.09.02.rar">ACTIONS Pad Product Tool_V1.09.02</a> <strong>&lt;&lt; you need this</strong></li>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/ACTIONS.Pad.Firmware.Modify.Tool_V1.16.rar">ACTIONS Pad Firmware Modify Tool_V1.16</a> <strong>&lt;&lt; and this</strong></li>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/ACTIONS.ATM702x_Memory_scan_tools_V2.0.rar">Actions ATM702X Hardware Check Tool/Memory Scan Tool v2.0</a></li>
+</ul></li>
+<li>Make bootable SD cards
+<ul>
+<li></li>
+</ul></li>
+<li><a href="https://www.slatedroid.com/topic/70585-adb-drivers/">adb drivers</a></li>
+</ul>
+<h4 id="mans-on-use">mans on use</h4>
+<ul>
+<li><strong><a href="https://www.slatedroid.com/topic/94521-actions-tablet-tools/" class="uri">https://www.slatedroid.com/topic/94521-actions-tablet-tools/</a></strong></li>
+<li><strong><a href="https://www.slatedroid.com/topic/103321-tutorial-how-to-port-any-firmware-on-any-atm7029/" class="uri">https://www.slatedroid.com/topic/103321-tutorial-how-to-port-any-firmware-on-any-atm7029/</a></strong></li>
+<li><a href="https://vondroid.com/resources/actions-tablet-product-tool.481/" class="uri">https://vondroid.com/resources/actions-tablet-product-tool.481/</a></li>
+<li>ru <a href="http://softrare.ru/windows/pad-product-tool" class="uri">http://softrare.ru/windows/pad-product-tool</a></li>
 </ul>
 <h1 id="atm7029-1">ATM7029</h1>
+<p>see also: <a href="#gs702a">GS702A</a> development board</p>
+<p><a href="#atm7029-1">ATM7029</a> &amp; ATM7025 SOC family (aka <a href="#gs702a">GS702A</a>, OWL, Leopard, GL5202, GL5302, and some other random internal names from Actions)</p>
+<ul>
+<li>ARM Cortex-A5 based</li>
+<li>quad core</li>
+<li>ATC260X power + audio codec</li>
+<li><a href="#vivante-gc1000">Vivante GC1000</a> gpu</li>
+<li>Realtek 8188 (?) wifi</li>
+</ul>
+<h2 id="actions-act-atm7029">Actions ACT-ATM7029</h2>
+<ul>
+<li>4x Cortex-A5</li>
+<li>1 GHz</li>
+<li>4 cores</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>SoC</th>
+<th>cores</th>
+<th>arch</th>
+<th>max clock</th>
+<th>GPU</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ATM7021A</td>
+<td>2xARM</td>
+<td>Cortex-A9</td>
+<td>1.3 GHz</td>
+<td>GPU PowerVR SGX540</td>
+</tr>
+<tr class="even">
+<td>ATM7029A</td>
+<td>4xARM</td>
+<td>Cortex-A5</td>
+<td>1.2 GHz</td>
+<td>GPU Vivante GC1000</td>
+</tr>
+<tr class="odd">
+<td>ATM7029B</td>
+<td>4xARM</td>
+<td>Cortex-A5</td>
+<td>1.3 GHz</td>
+<td>GPU PowerVR SGX540</td>
+</tr>
+<tr class="even">
+<td><a href="#atm7031a">ATM7031A</a></td>
+<td>4xARM</td>
+<td>Cortex-A5</td>
+<td>1.3 GHz</td>
+<td>GPU PowerVR SGX540</td>
+</tr>
+<tr class="odd">
+<td>ATM7059</td>
+<td>4xARM</td>
+<td>Cortex-A9</td>
+<td>1.5 GHz</td>
+<td>GPU PowerVR SGX544</td>
+</tr>
+<tr class="even">
+<td>ATM9009</td>
+<td>4xARM</td>
+<td>Cortex-A53</td>
+<td>1.0 GHz</td>
+<td>GPU PowerVR G6230</td>
+</tr>
+</tbody>
+</table>
+<h4 id="atm7031a">ATM7031A</h4>
+<p>No HDMI</p>
+<h3 id="references">references</h3>
+<ul>
+<li><a href="https://github.com/bmourit/owl2x-linux__old__/wiki" class="uri">https://github.com/bmourit/owl2x-linux__old__/wiki</a></li>
+</ul>
+<h4 id="ru">ru</h4>
+<ul>
+<li><a href="https://4pda.ru/forum/index.php?showtopic=582536" class="uri">https://4pda.ru/forum/index.php?showtopic=582536</a></li>
+<li><a href="https://4pda.ru/forum/lofiversion/index.php?t571710.html" class="uri">https://4pda.ru/forum/lofiversion/index.php?t571710.html</a></li>
+</ul>
+<h2 id="gs702a">GS702A</h2>
+<h3 id="actions-atm7029-development-board">Actions ATM7029 development board</h3>
+<ul>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/GS702A_PCBA_cn_V1.4.pdf">GS702A_PCBA_cn_V1.4.pdf</a></li>
+</ul>
+<h1 id="vivante-gpu">Vivante GPU</h1>
+<h2 id="vivante-gc1000">Vivante GC1000</h2>
+<ul>
+<li><a href="https://github.com/laanwj/etna_viv/wiki" class="uri">https://github.com/laanwj/etna_viv/wiki</a></li>
+<li><a href="https://github.com/laanwj/mesa/wiki" class="uri">https://github.com/laanwj/mesa/wiki</a></li>
+</ul>
+<h1 id="android-extracts">Android extracts</h1>
+<p>Some files was grabbed from existsing tablet firmwares can be used as recovery or hackig [SD boot] image:</p>
+<ul>
+<li><a href="https://github.com/bnmguy/ATC-ATM7029" class="uri">https://github.com/bnmguy/ATC-ATM7029</a></li>
+</ul>
 </body>
 </html>
