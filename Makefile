@@ -26,5 +26,5 @@ release:
 
 merge:
 	git checkout master
-	git checkout ponyatov -- Makefile doc
+	git checkout ponyatov -- Makefile doc tools README.md
 	$(MAKE) doc

@@ -1,6 +1,6 @@
 # ATM7029
 ## Actions ATM7029 Linux
-### for BDF netbook and tablets
+### for [BDF netbook] and tablets
 
 \(c\) Dmitry Ponyatov <<dponyatov@gmail.com>> CC BY-NC-SA
 
