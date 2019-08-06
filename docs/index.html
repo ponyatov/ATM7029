@@ -14,8 +14,12 @@
 <li><a href="#actions-atm7029-linux">Actions ATM7029 Linux</a><ul>
 <li><a href="#for-bdf-netbook-and-tablets">for BDF netbook and tablets</a></li>
 </ul></li>
-</ul></li>
+<li><a href="#about">About</a></li>
+<li><a href="#install">Install</a><ul>
 <li><a href="#tools">Tools</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#atm7029-1">ATM7029</a></li>
 </ul>
 </div>
 <h1 id="atm7029">ATM7029</h1>
@@ -24,9 +28,21 @@
 <p>(c) Dmitry Ponyatov &lt;<a href="mailto:dponyatov@gmail.com">dponyatov@gmail.com</a>&gt; CC BY-NC-SA</p>
 <p>github: <a href="https://github.com/ponyatov/ATM7029/" class="uri">https://github.com/ponyatov/ATM7029/</a></p>
 <p>manual: <a href="http://ponyatov.github.io/ATM7029/" class="uri">http://ponyatov.github.io/ATM7029/</a></p>
-<h1 id="tools">Tools</h1>
+<h2 id="about">About</h2>
+<p>I suddenly bought the cheapest chinese BDF netbook. It's a real crab both in hardware and especially in software. Some genius installed Android 5, so the device is totally unusable in any way.</p>
+<p>As you know, support is also chinese. I uselessly spend two months kicking the ass of seller, asking about a contact of any technical specialist to consult about SDK and tools let me build my own system for this scrap.</p>
+<p>I visit <a href="http://www.actions-semi.com/">Actions Semiconductor</a> website. There is nothing about <a href="#atm7029-1">ATM7029</a> SoC! Luckily Google let me find some tools and posts to uncover this thing and build a custom embedded Linux system.</p>
+<h2 id="install">Install</h2>
+<p>To build and install the system you should download source code archives from <a href="https://github.com/ponyatov/ATM7029/releases/latest" class="uri">https://github.com/ponyatov/ATM7029/releases/latest</a> and install some tools separately.</p>
+<p>Installation process was automated:</p>
+<pre><code>$ cd ~
+$ unzip ~/Downloads/ATM7029-190806.zip
+$ cd ATM7029-190806
+$ make</code></pre>
+<h3 id="tools">Tools</h3>
 <ul>
-<li>Actions PAD product tool</li>
+<li><a href="https://github.com/ponyatov/ATM7029/releases/download/190806/Pad_Product_Tool_1.04_01.rar">Actions PAD product tool</a></li>
 </ul>
+<h1 id="atm7029-1">ATM7029</h1>
 </body>
 </html>
